@@ -1,0 +1,120 @@
+/* esports */
+#esports {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../asset/background/backgroundEsports2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#esports .container {
+  padding: 150px 10% 100px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+#esports .container .schedule {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fa4454;
+}
+#esports .container .schedule h1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+#esports .container .schedule h1#upcoming {
+  background-color: #bd3541;
+}
+
+#esports .container .upcoming,
+#esports .container .completed {
+  width: 100%;
+  display: flex;
+  padding-bottom: 50px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#esports .container .upcoming {
+  display: block;
+}
+
+#esports .container .completed {
+  display: none;
+}
+
+#esports .container .matchDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 50px;
+}
+#esports .container .matchDay .date {
+  background-color: #fa4454;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+}
+
+#esports .container .matchDay .match {
+  width: 100%;
+  display: flex;
+  border-bottom: black 1px solid;
+  padding: 40px 20px;
+}
+
+#esports .container .matchDay .match .matchTeam {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+#esports .container .matchDay .match .matchTeam img {
+  height: 80px;
+}
+
+#esports .container .matchDay .match .matchDesc,
+#esports .container .matchDay .match .matchScore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+/* media query */
+@media (max-width: 1200px) {
+  #esports .container .matchDay .match {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  #esports .container .matchDay .match .matchTeam {
+    width: 100%;
+  }
+  #esports .container .matchDay .match .matchDesc,
+  #esports .container .matchDay .match .matchScore {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #esports .container .matchDay .match .matchTeam h2 {
+    display: none;
+  }
+}

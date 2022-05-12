@@ -1,0 +1,196 @@
+/* home */
+#home {
+  min-height: 100vh;
+  background: url("../asset/background/backgroundHome.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .container {
+  min-height: 100vh;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  background-color: #0000004d;
+}
+#home .container h1 {
+  font-size: 64px;
+}
+#home .container h2 {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#home .container h2 p {
+  font-size: 20px;
+}
+#home .container a {
+  font-size: 24px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: #fa4454 solid 1px;
+  background-color: #fa4454;
+  color: white;
+  margin-top: 8px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#home .container a:hover {
+  background-color: white;
+  color: #fa4454;
+  transition: 0.3s;
+}
+
+/* News */
+#news {
+  min-height: 100vh;
+  background: url("../asset/background/backgroudNews.png") no-repeat center;
+  background-size: cover;
+}
+#news .container {
+  min-height: 100vh;
+  padding: 100px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #0000004d;
+}
+#news .container h1 {
+  font-size: 64px;
+  color: #fa4454;
+  font-weight: bolder;
+}
+#news .container .text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 2;
+}
+#news .container .text p {
+  font-size: 24px;
+  color: white;
+}
+#news .container .text a {
+  font-size: 24px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: #fa4454 solid 1px;
+  background-color: #fa4454;
+  color: white;
+  margin-top: 8px;
+  transition: 0.3s;
+  width: fit-content;
+  text-decoration: none;
+}
+#news .container .text a:hover {
+  background-color: white;
+  color: #fa4454;
+  transition: 0.3s;
+}
+#news .container .card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  transition: 0.3s;
+  background-color: white;
+}
+#news .container .card:hover {
+  background-color: #fa4454;
+  color: white;
+  transition: 0.3s;
+}
+#news .container .card:hover h1 {
+  color: white;
+  transition: 0.3s;
+}
+#news .container .card:hover a {
+  background-color: white;
+  color: #fa4454;
+  transition: 0.3s;
+}
+#news .container .card:hover a:hover {
+  background-color: lightgray;
+  color: #fa4454;
+  transition: 0.3s;
+}
+#news .container .card img {
+  width: 100%;
+}
+#news .container .card h1 {
+  font-size: 48px;
+  margin: 0;
+}
+#news .container .card h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+#news .container .card a {
+  padding: 12px 24px;
+  font-size: 24px;
+  color: white;
+  background-color: #fa4454;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Esports */
+#esports {
+  min-height: 100vh;
+  background: url("../asset/index/esports.jpg") no-repeat center;
+  background-size: cover;
+}
+#esports .container {
+  min-height: 100vh;
+  padding: 100px 10%;
+  background-color: #00000066;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+#esports .container h1 {
+  color: #fa4454;
+  font-size: 48px;
+}
+#esports .container p {
+  color: white;
+  font-size: 24px;
+}
+#esports .container a {
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: white;
+  background-color: #fa4454;
+  border: none;
+  font-size: 24px;
+  transition: 0.3s;
+  border: #fa4454 solid 1px;
+  text-decoration: none;
+  width: fit-content;
+  margin-left: auto;
+}
+#esports .container a:hover {
+  background-color: white;
+  color: #fa4454;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 1024px) {
+  #news .container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,91 @@
+/* Registration Form */
+#regis {
+  min-height: 100vh;
+  background: url(../asset/background/backgroundRegis.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#regis .container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 150px 10% 80px 10%;
+}
+
+#regis .container form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddddddcc;
+  padding: 48px;
+  border-radius: 10px;
+  width: 1000px;
+}
+#regis .container form h1 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#regis .container form .regisInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#regis .container form label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#regis .container form input {
+  border: solid 1px black;
+}
+#regis .container form input[type="text"],
+#regis .container form input[type="password"],
+#regis .container form input[type="email"] {
+  height: 40px;
+  padding: 12px 12px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+#regis .container form input[type="radio"],
+#regis .container form input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+  border: solid 1px red;
+}
+#regis .container form input:focus {
+  outline: none;
+}
+#regis .container form p {
+  margin-top: 5px;
+}
+#regis .container form button {
+  height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: #fa4454;
+  color: white;
+  border: 1px solid #fa4454;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#regis .container form button:hover {
+  background-color: white;
+  color: #fa4454;
+  transition: 0.3s;
+}
+#regis .container form .gender label {
+  margin-right: 12px;
+  font-weight: normal;
+}
+#regis .container form .terms label {
+  font-weight: normal;
+  margin-left: 4px;
+}
+#regis .container form .terms label a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
